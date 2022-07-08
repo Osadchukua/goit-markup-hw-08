@@ -1,0 +1,101 @@
+.features__list {
+  @media screen and (min-width: 768px) {
+    @include flex(null, center, null, wrap);
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include flex(null, null, null, null);
+  }
+}
+
+.card-usual {
+  margin-bottom: 30px;
+  &--tab {
+    margin-bottom: 0px;
+  }
+  &__bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &__img {
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 0px;
+  }
+  &__title {
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+// // .features {
+// //   @include section(94px, 94px);
+// //   padding: 94px 0px;
+// // }
+
+// // .features__list {
+// //   @include flex(null, null, null, wrap);
+// //   display: flex;
+// //   margin-left: -30px;
+// // }
+
+// // .card-usual {
+
+// //   flex-basis: calc(100% / 4 - 30px);
+// //   margin-left: 30px;
+// //   &__bg {
+// //     display: flex;
+// //     width: 270px;
+// //     height: 120px;
+// //     align-items: center;
+// //     justify-content: center;
+// //     margin-bottom: 30px;
+// //     background: #f5f4fa;
+// //   }
+// //   &__img {
+// //     fill: currentColor;
+// //   }
+// //   &__title {
+// //     font-size: 14px;
+// //     line-height: 1.14;
+// //     letter-spacing: 0.03em;
+// //     text-transform: uppercase;
+// //     color: inherit;
+// //     margin-bottom: 10px;
+// //   }
+// //   &__text {
+// //     font-size: 14px;
+// //     line-height: 1.71;
+// //     letter-spacing: 0.03em;

@@ -1,17 +1,9 @@
-.gellery {
-  @include section(null, 94px);
-  // padding-bottom: 94px;
-}
-
 .gellery__list {
   @include flex(null, null, null, wrap);
-  // display: flex;
-  margin-left: -30px;
+  gap: 30px;
 }
 
 .card-img {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
   &__link {
     display: block;
   }
