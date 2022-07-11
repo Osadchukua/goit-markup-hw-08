@@ -7,7 +7,6 @@
 
 .goods__list {
   display: flex;
-
   flex-direction: column;
   gap: 30px 0px;
 
@@ -18,14 +17,20 @@
   }
 }
 .card-goods {
-  max-width: 450px;
+  // max-width: 450px;
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
-    max-width: 354px;
+    // max-width: 354px;
+  }
+    @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+    // max-width: 354px;
   }
 }
 .card-goods__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transition-duration) var(--timig-function);
   &:hover,
   &:focus {
@@ -41,8 +46,6 @@
 .card-goods__wrap {
   position: relative;
   overflow: hidden;
-  // width: 100%;
-  // justify-content: center;
 }
 .card-goods__hover-text {
   position: absolute;
@@ -63,9 +66,7 @@
   padding: 20px 24px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  box-flex: 1;
-  fp: 1;
-  grow: 1;
+  flex-grow: 1;
 }
 .card-goods__title {
   font-weight: 700;
