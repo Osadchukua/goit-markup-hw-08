@@ -1,9 +1,5 @@
 .soc {
-  // @include flex(null, center, null, wrap);
-  display: flex;
-  justify-content: center;
-  // padding-top: 16px;
-  // padding-bottom: 24px;
+  @include flex(null, center, null, null);
 }
 
 .soc__item {
@@ -17,9 +13,6 @@
 
 .soc__link {
   @include flex(center, center, null, null);
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;

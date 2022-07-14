@@ -8,7 +8,7 @@
   &:focus {
     fill: var(--accent-color);
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
@@ -32,15 +32,13 @@
   padding-bottom: 68px;
   padding-left: 40px;
   padding-right: 15px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
 
 .menu-mob_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flex(null, space-between, column, null);
   height: 100%;
   overflow: auto;
 }

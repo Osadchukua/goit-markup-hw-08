@@ -40,7 +40,6 @@
 }
 
 .footer__item {
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -54,27 +53,22 @@
   margin-bottom: 8px;
 }
 .footer__item--color {
-  color: #ffffff;
+  color: var(--footer-text-color);
 }
 
 .footer__join {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex(center, center, column, wrap);
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-bottom: 0px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     align-items: flex-start;
     margin-right: auto;
   }
 }
+
 .footer__title {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -86,27 +80,22 @@
 }
 
 .footer__subscribe {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-top: 60px;
   }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
+  @include desktop {
+    @include flex(flex-start, null, column, wrap);
     margin-top: 0px;
-    align-items: flex-start;
   }
 }
 
 .footer__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (min-width: 768px) {
+  @include flex(center, null, column, null);
+  @include tablet {
     flex-wrap: nowrap;
     justify-content: center;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-direction: row;
   }
 }
@@ -131,10 +120,10 @@
   @media screen and (min-width: 358px) {
     width: 320px;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 450px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 358px;
     margin-right: 12px;
     margin-bottom: 0;
@@ -146,8 +135,7 @@
     outline: transparent;
   }
   &::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;

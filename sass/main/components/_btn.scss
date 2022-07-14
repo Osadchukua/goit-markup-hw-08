@@ -1,12 +1,11 @@
 .hero__btn {
+  @include flex(center, null, null, null);
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   padding: 10px 32px;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   min-width: 200px;
@@ -20,17 +19,15 @@
 }
 
 .footer__btn {
+  @include flex(center, center, null, null);
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   padding: 10px 29px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-width: 200px;
+  width: 200px;
   height: 50px;
   color: var(--hero-btn-color);
   background: var(--hero-btn-background);
@@ -71,6 +68,7 @@ width: 200px;
 }
 
 .modal__btn-close {
+   @include flex(center, null, null, null);
   position: absolute;
   top: 8px;
   right: 8px;
@@ -79,8 +77,6 @@ width: 200px;
   background: #ffffff;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
   justify-items: center;
   &:focus,
   &:hover {

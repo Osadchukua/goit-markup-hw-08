@@ -1,24 +1,3 @@
-// @include mobile
-@mixin mobile {
-  @media screen and (min-width: 480px) {
-    @content;
-  }
-}
-
-// @include tablet
-@mixin tablet {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
-
-// @include desktop
-@mixin desktop {
-  @media screen and (min-width: 1200px) {
-    @content;
-  }
-}
-
 // @include flex(center, null, null, wrap);
 @mixin flex($ai, $jc, $fd, $fw) {
   display: flex;
@@ -28,6 +7,24 @@
   flex-wrap: $fw;
 }
 
+// @include mobile
+// @include tablet
+// @include desktop
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
 
 // @include retina
 @mixin retina {
@@ -36,7 +33,7 @@
   }
 }
 
-// @include section
+// @include section($pt, $pb)
 @mixin section($pt, $pb) {
   padding-top: $pt;
   padding-bottom: $pb;

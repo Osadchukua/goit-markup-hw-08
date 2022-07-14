@@ -18,13 +18,11 @@
     overflow: hidden;
   }
   &__label {
-    display: flex;
+    @include flex(center, center, null, null);
     position: absolute;
     bottom: 0px;
     width: 100%;
     height: 70px;
-    justify-content: center;
-    align-items: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
