@@ -5,13 +5,27 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../../img/hero_m.jpg);
-  @media screen and (min-width: 768px) {
+    url(../../../img/hero_mob.jpg);
+  @include retina {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../../img/hero_mob_2x.jpg);
+  }
+  @include tablet {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../../img/hero_tab.jpg);
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../../img/hero_tab_2x.jpg);
+    }
+  }
+  @include desktop {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../../img/hero.jpg);
-  }
-  @media screen and (min-width: 1200px) {
     height: 600px;
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../../img/hero_2x.jpg);
+    }
   }
 }
 
@@ -19,61 +33,25 @@
   flex-direction: column;
   padding-top: 118px;
   padding-bottom: 118px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
 
 .hero__title {
-  font-style: normal;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--hero-title-color);
   max-width: 360px;
   margin-bottom: 30px;
-@media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 44px;
     line-height: 1.36;
     max-width: 696px;
   }
 }
-
-
-
-
-
-
-// .hero .container{
-//   flex-direction: column;
-// }
-
-// .hero {
-//   display: flex;
-//   flex-wrap: nowrap;
-//   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-// rgba(47, 48, 58, 0.4)),
-//     url(../img/hero.jpg);
-//   max-width: 1600px;
-//   height: auto;
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   margin: 0 auto;
-// }
-
-// .hero__title {
-
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 1.36;
-//   text-align: center;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-//   color: var(--hero-title-color);
-//   margin: 0px auto 30px auto;
-//   max-width: 700px;
-// }

@@ -6,8 +6,10 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
   &__span--header {
     color: var(--header-logo-color);
   }
@@ -21,5 +23,4 @@
   padding-top: 0;
   padding-bottom: 0px;
   margin-bottom: 20px;
-  
 }

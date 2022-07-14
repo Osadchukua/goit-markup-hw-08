@@ -3,19 +3,30 @@
 }
 
 .header__container {
-  @include flex(center, null, null, wrap);
-    // display: flex;
-    // align-items: center;
+  display: flex;
+  padding: 0px 15px;
+  justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
   }
+}
 
 .menu {
   display: flex;
+  height: 80px;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .menu__list {
-  display: flex;
-  margin-left: 93px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .menu__link {
@@ -61,8 +72,15 @@
 }
 
 .header__list {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    // margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .header__mail,
@@ -77,6 +95,15 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color var(--transition-duration) var(--timig-function);
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+}
+
+.header__mail {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
 }
 
 .header .link:hover {
@@ -112,4 +139,11 @@
 
 .item--tab {
   margin-right: 50px;
+}
+
+.item--tab-mail {
+  margin-right: 0px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
