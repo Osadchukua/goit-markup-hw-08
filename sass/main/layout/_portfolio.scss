@@ -57,6 +57,7 @@
   height: 101%;
   transform: translateY(100%);
   transition: transform var(--transition-duration) var(--timig-function);
+  overflow: auto;
 }
 
 .card-goods__item {

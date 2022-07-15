@@ -1,0 +1,18 @@
+.features,
+.team,
+.customers,
+.footer,
+.portfolio {
+  padding: 60px 0px;
+  @include desktop {
+    padding: 94px 0px;
+  }
+}
+
+.gellery {
+  padding-bottom: 94px;
+}
+
+.footer {
+  padding: 56px 0px 64px;
+}

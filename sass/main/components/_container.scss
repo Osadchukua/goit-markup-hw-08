@@ -1,26 +1,17 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
   @include tablet {
     width: 768px;
   }
   @include desktop {
     width: 1200px;
-    @include section(94px, 94px);
   }
 }
 
-.gellery .container {
-  padding-top: 0px;
-}

@@ -2,18 +2,21 @@
   background: var(--hero-footer-background);
 }
 
+.footer-wrap{
+  @include flex(baseline, space-around, null, null);
+width: 100%;
+}
+
 .footer__container {
   flex-direction: column;
   @include tablet {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
+    // flex-direction: row;
+    // justify-content: space-around;
+    // align-items: baseline;
   }
   @include desktop {
     justify-content: flex-start;
     align-self: stretch;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
@@ -135,7 +138,6 @@
     outline: transparent;
   }
   &::placeholder {
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -143,5 +145,13 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer__mail,
+.footer__tel {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 }

@@ -15,7 +15,7 @@
   }
   &__bg {
     @include flex(center, center, null, null);
-    min-width: 270px;
+    max-width: 450px;
     height: 120px;
     background: var(--second-site-background);
     border-radius: 4px;
@@ -36,6 +36,7 @@
     text-transform: uppercase;
     color: #212121;
     margin-bottom: 10px;
+    max-width: 450px;
   }
   &__text {
     font-family: 'Roboto';
@@ -45,6 +46,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    max-width: 450px;
   }
   @include tablet {
     width: calc(100% / 2 - 15px);
