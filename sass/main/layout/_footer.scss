@@ -2,22 +2,25 @@
   background: var(--hero-footer-background);
 }
 
-.footer-wrap{
-  @include flex(baseline, space-around, null, null);
-width: 100%;
-}
+
 
 .footer__container {
   flex-direction: column;
   @include tablet {
-    // flex-direction: row;
-    // justify-content: space-around;
-    // align-items: baseline;
+    flex-direction: row;
+
+    align-items: baseline;
   }
   @include desktop {
-    justify-content: flex-start;
-    align-self: stretch;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
+}
+
+.footer-wrap {
+  @include flex(baseline, space-around, null, null);
+  width: 100%;
 }
 
 .footer__contact {
