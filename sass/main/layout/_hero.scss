@@ -5,35 +5,37 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../../img/hero_mob.jpg);
+    url(../img/hero_mob.jpg);
   @include retina {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../../img/hero_mob_2x.jpg);
+      url(../img/hero_mob_2x.jpg);
   }
   @include tablet {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../../img/hero_tab.jpg);
+      url(../img/hero_tab.jpg);
     @include retina {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../../img/hero_tab_2x.jpg);
+        url(../img/hero_tab_2x.jpg);
     }
   }
   @include desktop {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../../img/hero.jpg);
+      url(../img/hero.jpg);
     height: 600px;
     @include retina {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../../img/hero_2x.jpg);
+        url(../img/hero_2x.jpg);
     }
   }
 }
 
 .hero .container {
   flex-direction: column;
-  @include section(118px, 118px);
+  padding-top: 118px;
+  padding-bottom: 118px;
   @include desktop {
-  @include section(200px, 200px);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
