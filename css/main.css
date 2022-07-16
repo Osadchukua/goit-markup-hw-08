@@ -1062,6 +1062,16 @@ a {
   gap: 15px 8px;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 480px) {
+  .portfolio__list-btn {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__list-btn {
+    max-width: 100%;
+  }
+}
 
 .goods__list {
   display: flex;
