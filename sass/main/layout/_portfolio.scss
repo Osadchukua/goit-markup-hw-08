@@ -15,6 +15,7 @@
 }
 
 .card-goods {
+  max-width: 450px;
   @include tablet {
     width: calc((100% - 30px) / 2);
   }

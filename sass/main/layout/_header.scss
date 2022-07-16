@@ -46,7 +46,7 @@
     border-radius: 2px;
     background-color: var(--accent-color);
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     opacity: 0;
     transition: opacity var(--transition-duration) var(--timig-function);
   }
@@ -59,12 +59,13 @@
     border-radius: 2px;
     background-color: var(--accent-color);
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     opacity: 1;
     transition: opacity var(--transition-duration) var(--timig-function);
   }
   &:hover::after {
     opacity: 1;
+    bottom: -2px;
   }
 }
 
@@ -141,7 +142,7 @@
     border-radius: 2px;
     background-color: var(--accent-color);
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     opacity: 1;
   }
 }

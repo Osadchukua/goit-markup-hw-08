@@ -32,6 +32,9 @@
   padding-bottom: 68px;
   padding-left: 40px;
   padding-right: 15px;
+  transition-property: opacity, visibility;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timig-function);
   @include tablet {
     display: none;
   }

@@ -151,6 +151,9 @@ a {
   padding-bottom: 68px;
   padding-left: 40px;
   padding-right: 15px;
+  transition-property: opacity, visibility;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timig-function);
 }
 @media screen and (min-width: 768px) {
   .menu-mob {
@@ -441,7 +444,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .modal {
-    transform: translate(-50%, -25%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -644,7 +647,7 @@ a {
   border-radius: 2px;
   background-color: var(--accent-color);
   left: 0;
-  bottom: 0;
+  bottom: -2px;
   opacity: 0;
   transition: opacity var(--transition-duration) var(--timig-function);
 }
@@ -657,12 +660,13 @@ a {
   border-radius: 2px;
   background-color: var(--accent-color);
   left: 0;
-  bottom: 0;
+  bottom: -2px;
   opacity: 1;
   transition: opacity var(--transition-duration) var(--timig-function);
 }
 .menu__link:hover::after {
   opacity: 1;
+  bottom: -2px;
 }
 
 .header__list {
@@ -751,7 +755,7 @@ a {
   border-radius: 2px;
   background-color: var(--accent-color);
   left: 0;
-  bottom: 0;
+  bottom: -2px;
   opacity: 1;
 }
 
@@ -770,6 +774,8 @@ a {
 
 .hero {
   width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   height: 400px;
   background-size: cover;
   background-position: 50% 50%;
@@ -1070,6 +1076,9 @@ a {
   }
 }
 
+.card-goods {
+  max-width: 450px;
+}
 @media screen and (min-width: 768px) {
   .card-goods {
     width: calc((100% - 30px) / 2);
@@ -1163,7 +1172,14 @@ a {
   display: flex;
   align-items: baseline;
   justify-content: space-around;
-  width: 100%;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-wrap {
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 .footer__contact {
@@ -1224,7 +1240,6 @@ a {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__join {
@@ -1249,11 +1264,6 @@ a {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .footer__subscribe {
-    margin-top: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__subscribe {
     display: flex;
